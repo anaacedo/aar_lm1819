@@ -2,31 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario de prueba de HTML5</title>
+    <title>Formulario</title>
 </head>
+
 <body>
-    <table>
-    <form action= "" method="GET"> 
+    <h1>Formulario:</h1>
+<fieldset><legend></legend>
 
-        <tr><td><label for="Nombre">Nombre: </label></td><td><input type="text" value="" id="nombre"name="Nombre" maxlength="10"/></td></tr> 
-        
-        <tr><td> <label for="email">Correo electrónico: </label></td><td> <input type="email"></td></tr> 
-        <tr><td><label for="Url">URL: </label></td><td><input type="url" placeholder="Escribe la URL de tu página"></td></tr> 
-        <tr><td><label for="fecha">Fecha: </label></td><td><input type="date"></td></tr> 
-        <tr><td><label for="tiempo">Tiempo: </label></td><td><input type="time"></td></tr> 
-        <tr><td><label for="fechahora">Fecha y hora: </label></td><td><input type="datetime"></td></tr> 
-        <tr><td><label for="mes">Mes: </label></td><td><input type="month"></td></tr> 
-        <tr><td><label for="semana">Semana: </label></td><td><input type="week"></td></tr> 
-        <tr><td><label for="rango">Número (min -10, max 10): </label></td><td><input type="number" min="-10" max="10" step="2"></td></tr> 
-        <tr><td><label for="telefono">Teléfono: </label></td><td><input type="text" required="required"  maxlength="9" min="9" max="9"></td></tr> 
-        <tr><td><label for="termino">Término de búsqueda: </label></td><td><input type="search"></td></tr>
-        <tr><td><label for="color">Color favorito: </label></td><td><input type="color"></td></tr>
-        <tr><td><input type="submit" value="Enviar"/></td></tr>
+   <form action= "gestionados.jsp" method="GET">
+    
+<table>
+    <tr><td><label for="Nombre">Nombre: </label></td> <td> <input type="text" value="" id="nombre"name="Nombre" placeholder="nombre de usuario" maxlength="10"/></td></tr>
+   
+   <tr><td><label for="Contraseña">Contraseña: </label></td> <td><input type="password" pattern="[A-Z]{5}[0-9]{3}" value="" name="pass" placeholder="contraseña"/></td></tr>
+ 
+
+   <tr><td><label for="pregutna"> Alumno?</label></td><td>
+<input type="radio" id="pregunta" name="pregunta" value="S" checked="checked"/>Sí
+<input type="radio" id="pregunta" name="pregunta" value="N"/>No</td></tr>
+ 
+
+<tr><td><label for="Aficiones">Aficiones: </label></td> <td><input type="checkbox" name="futbol" value="f"/> futbol
+<input type="checkbox" name="cine" value="f"/> cine
+
+<tr><td><label for="provincias">Provincia </label></td> <td>
+<select name="provincias" id="provincia">
+    <optgroup label="Uno">
+            <option value="SE">Sevilla</option>
+    </optgroup>
+    <optgroup label="Dos">
+<option value="Ca">Cádiz</option>
+<option value="Hu">Huelva</option>
+</optgroup>
+</select>
+</td></tr>
+<tr><td><label for="Seleccionar archivo">Seleccionar archivo: </label></td> <td> <input type="file" name="archivo"/></td></tr>
+<tr><td><label for="Descripción">Descripción: </label></td><td><textarea name="descripcion" rows="10" cols="50"></textarea></td></tr>
+<tr><td><label for="Pulsar">Pulsar: </label></td> <td><input type="button" name="boton" value="pulsar"/></td></tr>
+<tr><td><label for="Borrar">Borrar: </label></td> <td><input type="reset" value="borrar"/></td></tr>
+<tr><td><label for="Enviar">Enviar: </label></td> <td><input type="submit" value="Enviar"/></td></tr>
+
+</form> 
 
 
-    </table>
-    </form>
+
+<form>
+    <tr><td><label for="Número">Número: </label></td> <td><input type="number" required="required"  maxlength="5" min="1" max="10"></td></tr>
+    <tr><td><label for="Email">Email: </label></td> <td><input type="email"></td></tr>
+    <tr><td><label for="Url">URL: </label></td> <td><input type="url"></td></tr>
+    <tr><td><label for="Fecha">Fecha: </label></td> <td><input type="date"></td></tr>
+    <tr><td><label for="Hora">Hora: </label></td> <td><input type="time"></td></tr>
+    <tr><td><label for="Datetime">Datetime: </label></td> <td><input type="datetime"></td></tr>
+    <tr><td><label for="Mes">Mes: </label></td> <td><input type="month"></td></tr>
+    <tr><td><label for="Buscar">Buscar: </label></td> <td><input type="search"></td></tr>
+    <tr><td><label for="Telefono">Telefono: </label></td> <td><input type="tel"></td></tr>
+    <tr><td><label for="Rango">Rango: </label></td> <td><input type="range" min="1" max="100" step="2"></td></tr>
+    <tr><td><label for="color">Color: </label></td> <td><input type="color">
+    <tr><td><input type="submit" value="Enviar consulta"/> </td></tr>
+</table>
+</form>
+
+</fieldset>
+
+
+
 </body>
 </html>
