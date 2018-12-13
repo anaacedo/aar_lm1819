@@ -1,0 +1,111 @@
+h2 {
+text-align: center;
+
+}
+
+#bloque1 {
+
+    background-color: #656B74;
+    border-style: none;
+    height: 200px;
+   
+
+}
+
+#letra1{
+
+    font-family: "times new roman";
+    color: white;
+    text-align: left;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 5px 5px 20px
+}
+
+#letra2{
+    color: white;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    margin: 0px 5px 5px 20px
+}
+
+#letra3{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin: 0px 5px 2px 20px
+}
+
+#bloque2{
+     border-style: none;
+    height: 130px;
+    width: 320px;
+    border-style: groove;
+    font-size: 10px;
+    position: relative;
+}
+
+#mundo{
+    color: blue;
+    font-family: "arial";
+    font-weight: bold;
+}
+
+#apple{
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+font-size: 15px;
+
+}
+
+#dic{
+    color: #656B74;
+
+}
+
+#p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #585858;
+}
+
+#continuar{
+color:#0040FF;
+
+}
+
+#sub2{
+    position: absolute;
+    border-style: none;
+    height: 130px;
+    width: 100px;
+    border-style: groove;
+    color:white;
+    top: -2px;
+    right: 0;
+    background-color: #585858;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px -2px 7px 2px
+
+}
+
+#sub3{
+    position: absolute;
+    border-style: none;
+    top: 286px;
+    right: 0;
+
+}
+#mundoo{
+    color:green;
+    font-family: "arial";
+    font-weight: bold;
+}
+}
+
+
+
+
